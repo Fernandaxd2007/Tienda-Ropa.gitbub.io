@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #f0f8ff;
+}
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #00aaff, #0056b3);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    transition: transform 0.3s;
+}
+
+.sidebar ul li:hover {
+    transform: scale(1.05);
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, padding 0.3s;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+    background-image: url(../fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 300px;
+    padding: 20px;
+    color: #333;
+    width: calc(100% - 250px);
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #0056b3;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1.1em;
+    color: #007BFF;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.add-to-cart {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.add-to-cart i {
+    font-size: 20px;
+}
